@@ -5,33 +5,44 @@ using UnityEngine;
 public class GravityCharacter : MonoBehaviour {
 
     Rigidbody2D player;
+    SpriteRenderer flip;
     bool nagativeGravity = false;
     public float gravityPower = 1;
-    public int rotateSpeed = 0;
+    float distToGround;
 
     private void Awake()
     {
         player = GetComponent<Rigidbody2D>();
+        flip = GetComponent<SpriteRenderer>();
     }
     private void Update()
     {
         Controls();
     }
+    bool checkGrounded()
+    {
+        return Physics.Raycast(transform.position, -Vector2.up,  200, 0);
+    }
     void Controls()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(nagativeGravity == false)
+            if (checkGrounded())
             {
-                player.gravityScale = -gravityPower;
-                transform.up = Vector3.Lerp(transform.up, 12, rotateSpeed * Time.deltaTime);
+                if (nagativeGravity == false)
+                {
                 nagativeGravity = true;
-            }
-            else
-            {
+                flip.flipY = true;
+                player.gravityScale = -gravityPower;
+                }
+                else
+                {
                 nagativeGravity = false;
+                flip.flipY = false;
                 player.gravityScale = gravityPower;
+                }
             }
+
         }
     }
 }
