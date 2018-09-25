@@ -47,12 +47,14 @@ public class GravityCharacter : MonoBehaviour {
                 {
                 nagativeGravity = true;
                 flip.flipY = true;
+                player.AddForce(-player.transform.up * 0);
                 player.gravityScale = -gravityPower;
                 }
                 else
                 {
                 nagativeGravity = false;
                 flip.flipY = false;
+                player.AddForce(player.transform.up * 0);
                 player.gravityScale = gravityPower;
                 }
             }
