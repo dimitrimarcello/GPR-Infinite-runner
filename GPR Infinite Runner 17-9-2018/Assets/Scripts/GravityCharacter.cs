@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class GravityCharacter : MonoBehaviour {
 
+    [SerializeField]
+    LayerMask mask;
+    [SerializeField]
+    private float checkHeight;
     Rigidbody2D player;
     SpriteRenderer flip;
     bool nagativeGravity = false;
     public float gravityPower = 1;
     float distToGround;
+    RaycastHit2D hit;
 
     private void Awake()
     {
@@ -21,7 +26,16 @@ public class GravityCharacter : MonoBehaviour {
     }
     bool checkGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector2.up,  200, 0);
+        if(nagativeGravity == false)
+        {
+            hit = Physics2D.Raycast(transform.position, -Vector2.up, checkHeight, mask);
+        }
+        else if (nagativeGravity == true)
+        {
+            hit = Physics2D.Raycast(transform.position, Vector2.up, checkHeight, mask);
+        }
+        
+        return hit.collider == null ? false : true;
     }
     void Controls()
     {
