@@ -13,6 +13,8 @@ public class GravityCharacter : MonoBehaviour {
     bool nagativeGravity = false;
     public float gravityPower = 1;
     float distToGround;
+    [SerializeField]
+    float movementSpeed;
     RaycastHit2D hit;
 
     private void Awake()
@@ -22,6 +24,7 @@ public class GravityCharacter : MonoBehaviour {
     }
     private void Update()
     {
+        player.velocity = new Vector3(movementSpeed, 0, 0);
         Controls();
     }
     bool checkGrounded()
@@ -45,17 +48,17 @@ public class GravityCharacter : MonoBehaviour {
             {
                 if (nagativeGravity == false)
                 {
-                nagativeGravity = true;
-                flip.flipY = true;
-                player.AddForce(-player.transform.up * 0);
-                player.gravityScale = -gravityPower;
+                    nagativeGravity = true;
+                    flip.flipY = true;
+                    player.AddForce(-player.transform.up * 0);
+                    player.gravityScale = -gravityPower;
                 }
                 else
                 {
-                nagativeGravity = false;
-                flip.flipY = false;
-                player.AddForce(player.transform.up * 0);
-                player.gravityScale = gravityPower;
+                    nagativeGravity = false;
+                    flip.flipY = false;
+                    player.AddForce(player.transform.up * 0);
+                    player.gravityScale = gravityPower;
                 }
             }
 
