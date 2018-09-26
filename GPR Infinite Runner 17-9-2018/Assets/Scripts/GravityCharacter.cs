@@ -24,7 +24,8 @@ public class GravityCharacter : MonoBehaviour {
     }
     private void Update()
     {
-        player.velocity = new Vector3(movementSpeed, 0, 0);
+        //player.velocity = new Vector3(movementSpeed, 0, 0);
+        transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         Controls();
     }
     bool checkGrounded()
