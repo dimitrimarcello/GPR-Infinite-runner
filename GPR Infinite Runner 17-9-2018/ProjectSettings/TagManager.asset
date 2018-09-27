@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Destroyer
-  - Quads
-  - Quads2
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,13 +13,8 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< HEAD
   - 
-  - PlayerLayer
-=======
-  - Background
   - 
->>>>>>> 2936f5ef5c6d1f555f8d65e75e1ea31db6f7a71b
   - 
   - 
   - 
