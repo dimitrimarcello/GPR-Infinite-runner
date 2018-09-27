@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class GravityCharacter : MonoBehaviour {
 
+    [SerializeField]
+    LayerMask mask;
+    [SerializeField]
+    private float checkHeight;
     Rigidbody2D player;
     SpriteRenderer flip;
     bool nagativeGravity = false;
     public float gravityPower = 1;
     float distToGround;
+    [SerializeField]
+    float movementSpeed;
+    RaycastHit2D hit;
 
     private void Awake()
     {
@@ -17,11 +24,22 @@ public class GravityCharacter : MonoBehaviour {
     }
     private void Update()
     {
+        //player.velocity = new Vector3(movementSpeed, 0, 0);
+        transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         Controls();
     }
     bool checkGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector2.up,  200, 0);
+        if(nagativeGravity == false)
+        {
+            hit = Physics2D.Raycast(transform.position, -Vector2.up, checkHeight, mask);
+        }
+        else if (nagativeGravity == true)
+        {
+            hit = Physics2D.Raycast(transform.position, Vector2.up, checkHeight, mask);
+        }
+        
+        return hit.collider == null ? false : true;
     }
     void Controls()
     {
@@ -31,15 +49,17 @@ public class GravityCharacter : MonoBehaviour {
             {
                 if (nagativeGravity == false)
                 {
-                nagativeGravity = true;
-                flip.flipY = true;
-                player.gravityScale = -gravityPower;
+                    nagativeGravity = true;
+                    flip.flipY = true;
+                    player.AddForce(-player.transform.up * 0);
+                    player.gravityScale = -gravityPower;
                 }
                 else
                 {
-                nagativeGravity = false;
-                flip.flipY = false;
-                player.gravityScale = gravityPower;
+                    nagativeGravity = false;
+                    flip.flipY = false;
+                    player.AddForce(player.transform.up * 0);
+                    player.gravityScale = gravityPower;
                 }
             }
 
