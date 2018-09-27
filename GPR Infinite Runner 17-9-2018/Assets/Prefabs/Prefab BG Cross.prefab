@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4790857379763130}
   - component: {fileID: 212708385642147346}
   m_Layer: 8
-  m_Name: Prefab Cross
+  m_Name: Prefab BG Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
