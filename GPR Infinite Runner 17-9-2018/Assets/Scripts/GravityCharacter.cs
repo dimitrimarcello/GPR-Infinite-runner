@@ -15,18 +15,33 @@ public class GravityCharacter : MonoBehaviour {
     float distToGround;
     [SerializeField]
     float movementSpeed;
+    [SerializeField]
+    float catchupSpeed;
     RaycastHit2D hit;
+    Transform cameraPos;
 
     private void Awake()
     {
         player = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
+        cameraPos = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
     }
     private void Update()
     {
-        //player.velocity = new Vector3(movementSpeed, 0, 0);
         transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
+        adjustSpeed();
         Controls();
+    }
+    void adjustSpeed()
+    {
+        if(transform.position.x < cameraPos.position.x - 3.36f)
+        {
+            movementSpeed = catchupSpeed;
+        }
+        else if(transform.position.x >= cameraPos.position.x - 3.36f)
+        {
+            movementSpeed = 8;
+        }
     }
     bool checkGrounded()
     {
