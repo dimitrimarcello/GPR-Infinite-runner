@@ -4,30 +4,51 @@ using UnityEngine;
 
 public class chunkLoader : MonoBehaviour {
 
-    Transform _player;
+    Transform _camera;
     [SerializeField]
-    Transform spawnLocation;
     GameObject[] chunksEasy;
+    [SerializeField]
     GameObject[] chunksMedium;
+    [SerializeField]
     GameObject[] chunksHard;
+    bool donnur;
 
     private void Awake()
     {
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        chunksEasy = GameObject.FindGameObjectsWithTag("ChunksEasy");
-        chunksMedium = GameObject.FindGameObjectsWithTag("ChunksMedium");
-        chunksHard = GameObject.FindGameObjectsWithTag("ChunksHard");
+        _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
+        donnur = false;
     }
     private void Update()
     {
-        
+        LoadChunk();
+        DestroyThis();
     }
     void LoadChunk()
     {
-        if(transform.position.x >= _player.position.x)
+        if(_camera.position.x >= transform.position.x && donnur == false)
         {
-            
-            //Instantiate(chunksEasy[1],);
+            Vector3 spawnLocation = new Vector3(transform.position.x + 26, transform.position.y, 0);
+            int ods = Random.Range(1, 3);
+            if(ods == 1)
+            {
+                Instantiate(chunksEasy[Random.Range(0,chunksEasy.Length)], spawnLocation, Quaternion.identity);
+            }
+            if (ods == 2)
+            {
+                Instantiate(chunksMedium[Random.Range(0, chunksMedium.Length)], spawnLocation, Quaternion.identity);
+            }
+            if (ods == 3)
+            {
+                Instantiate(chunksHard[Random.Range(0, chunksHard.Length)], spawnLocation, Quaternion.identity);
+            }
+            donnur = true;
+        }
+    }
+    void DestroyThis()
+    {
+        if(transform.position.x <= _camera.position.x - 40)
+        {
+            Destroy(this.gameObject);
         }
     }
 
