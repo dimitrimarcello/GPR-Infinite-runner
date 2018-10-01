@@ -54,9 +54,10 @@ GameObject:
   - component: {fileID: 4019295384417606}
   - component: {fileID: 212551811170062390}
   - component: {fileID: 61989086623427056}
+  - component: {fileID: 114051000867425780}
   m_Layer: 8
   m_Name: Chunk_easy_2
-  m_TagString: Untagged
+  m_TagString: ChunksEasy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,7 +204,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4718750634640362}
   - component: {fileID: 212850633286839212}
-  - component: {fileID: 61861311090064956}
   m_Layer: 8
   m_Name: jungle_tileset_1
   m_TagString: Untagged
@@ -351,7 +351,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1131137942520858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.69, y: -3.75, z: 0}
+  m_LocalPosition: {x: 0, y: -3.7, z: 0}
   m_LocalScale: {x: 4.1, y: 2.61, z: 5}
   m_Children:
   - {fileID: 4237082367820582}
@@ -565,7 +565,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494321281409864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.390244, y: 0.35249048, z: 0}
+  m_LocalPosition: {x: 2.386, y: 0.335, z: 0}
   m_LocalScale: {x: 0.94135016, y: 1.4787493, z: 0.7719071}
   m_Children: []
   m_Father: {fileID: 4019295384417606}
@@ -823,31 +823,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 0.28729624}
   m_EdgeRadius: 0
---- !u!61 &61861311090064956
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1494321281409864}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
-  m_EdgeRadius: 0
 --- !u!61 &61927207980656292
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -860,7 +835,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.1479589, y: -0.010879353}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -871,7 +846,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.6159178, y: 0.2982413}
   m_EdgeRadius: 0
 --- !u!61 &61952336580460698
 BoxCollider2D:
@@ -946,6 +921,25 @@ EdgeCollider2D:
   - {x: 0.08633389, y: -0.4038415}
   - {x: 0.24322753, y: -0.39864582}
   - {x: 0.24, y: 0.34545976}
+--- !u!114 &114051000867425780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131137942520858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbe62c9976960146a287147230153a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnLocation: {fileID: 0}
+  chunksEasy:
+  - {fileID: 1131137942520858}
+  chunksMedium:
+  - {fileID: 1163127142418204, guid: b0d192f9bf582b2419b2c9a5d6ba93ee, type: 2}
+  - {fileID: 1094449926203476, guid: 8e1d17a6321332a4fbc1254f6fe7029f, type: 2}
+  chunksHard:
+  - {fileID: 1119505052233784, guid: 3636c9869ce51dd4e8cd98f1f3f97d30, type: 2}
 --- !u!212 &212018708056410518
 SpriteRenderer:
   m_ObjectHideFlags: 1
