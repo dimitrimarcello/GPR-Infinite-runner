@@ -28,16 +28,16 @@ public class chunkLoader : MonoBehaviour {
         if(_camera.position.x >= transform.position.x && donnur == false)
         {
             Vector3 spawnLocation = new Vector3(transform.position.x + 26, transform.position.y, 0);
-            int ods = Random.Range(1, 3);
-            if(ods == 1)
+            int ods = Random.Range(1, 100);
+            if(ods >= 1 && ods <= 40)
             {
                 Instantiate(chunksEasy[Random.Range(0,chunksEasy.Length)], spawnLocation, Quaternion.identity);
             }
-            if (ods == 2)
+            if (ods >= 41 && ods <= 80)
             {
                 Instantiate(chunksMedium[Random.Range(0, chunksMedium.Length)], spawnLocation, Quaternion.identity);
             }
-            if (ods == 3)
+            if (ods >= 81 && ods <= 100)
             {
                 Instantiate(chunksHard[Random.Range(0, chunksHard.Length)], spawnLocation, Quaternion.identity);
             }

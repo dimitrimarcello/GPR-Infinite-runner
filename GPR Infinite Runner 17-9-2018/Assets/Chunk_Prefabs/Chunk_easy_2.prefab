@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212414121703210584}
   m_Layer: 8
   m_Name: jungle_tileset_18 (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 61719108482156294}
   m_Layer: 8
   m_Name: Prefab flat ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 114051000867425780}
   m_Layer: 8
   m_Name: Chunk_easy_2
-  m_TagString: ChunksEasy
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 68703635004453136}
   m_Layer: 8
   m_Name: jungle_tileset_6
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 212500171772750572}
   m_Layer: 8
   m_Name: jungle_tileset_18
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 61952336580460698}
   m_Layer: 8
   m_Name: jungle_tileset_11
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 61072291623804476}
   m_Layer: 8
   m_Name: jungle_tileset_0
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 212664022361778044}
   m_Layer: 8
   m_Name: jungle_tileset_27
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 212018708056410518}
   m_Layer: 8
   m_Name: jungle_tileset_16
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 61480654608829764}
   m_Layer: 8
   m_Name: Prefab flat ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 61927207980656292}
   m_Layer: 8
   m_Name: jungle_tileset_1 (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 212850633286839212}
   m_Layer: 8
   m_Name: jungle_tileset_1
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 212159330948888220}
   m_Layer: 8
   m_Name: jungle_tileset_26
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 61642257342470004}
   m_Layer: 8
   m_Name: Flat Ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 61828896425514054}
   m_Layer: 8
   m_Name: Flat Ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 212716105127782154}
   m_Layer: 8
   m_Name: jungle_tileset_16 (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 212750472128393676}
   m_Layer: 8
   m_Name: jungle_tileset_27 (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 61500350415078184}
   m_Layer: 8
   m_Name: Flat Ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 61316221750992892}
   m_Layer: 8
   m_Name: Prefab flat ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 61488231648713736}
   m_Layer: 8
   m_Name: Flat Ground (1)
-  m_TagString: Untagged
+  m_TagString: Chunks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1131137942520858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.7, z: 0}
+  m_LocalPosition: {x: 52.35, y: 10.5, z: 0}
   m_LocalScale: {x: 4.1, y: 2.61, z: 5}
   m_Children:
   - {fileID: 4237082367820582}
@@ -932,7 +932,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbe62c9976960146a287147230153a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnLocation: {fileID: 0}
   chunksEasy:
   - {fileID: 1131137942520858}
   chunksMedium:
