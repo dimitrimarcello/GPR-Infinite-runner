@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4294455949784720}
+  - component: {fileID: 114138115305375490}
   - component: {fileID: 198203777143593298}
   - component: {fileID: 199194481158781242}
   m_Layer: 0
@@ -41,6 +42,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &114138115305375490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372040286346358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bbc13081f1d734d9eb0b8588214345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oofSound: {fileID: 8300000, guid: 2056b2323015b5f45a8ed718ee62c612, type: 3}
+  Player: {fileID: 0}
+  cameraPos: {fileID: 0}
 --- !u!198 &198203777143593298
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -100,7 +115,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1885945464
+  randomSeed: -174959353
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -496,7 +511,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 1
-    maxNumParticles: 1000
+    maxNumParticles: 100
     size3D: 0
     rotation3D: 0
     gravityModifier:
