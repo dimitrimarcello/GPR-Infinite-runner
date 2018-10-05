@@ -10,7 +10,7 @@ public class GravityCharacter : MonoBehaviour {
     private float checkHeight;
     Rigidbody2D player;
     SpriteRenderer flip;
-    bool nagativeGravity = false;
+    bool negativeGravity = false;
     public float gravityPower = 1;
     float distToGround;
     [SerializeField]
@@ -19,18 +19,23 @@ public class GravityCharacter : MonoBehaviour {
     float catchupSpeed;
     RaycastHit2D hit;
     Transform cameraPos;
+    GameObject[] chunksColor;
+    Color32 switchColor;
+
 
     private void Awake()
     {
         player = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
         cameraPos = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
+        switchColor = new Color32(255,83,54,255);
     }
     private void Update()
     {
         transform.Translate(Vector3.right * Time.deltaTime * movementSpeed);
         adjustSpeed();
         Controls();
+        SwitchEffect();
     }
     void adjustSpeed()
     {
@@ -45,33 +50,72 @@ public class GravityCharacter : MonoBehaviour {
     }
     bool checkGrounded()
     {
-        if(nagativeGravity == false)
+        if(negativeGravity == false)
         {
             hit = Physics2D.Raycast(transform.position, -Vector2.up, checkHeight, mask);
         }
-        else if (nagativeGravity == true)
+        else if (negativeGravity == true)
         {
             hit = Physics2D.Raycast(transform.position, Vector2.up, checkHeight, mask);
         }
         
         return hit.collider == null ? false : true;
     }
+    void SwitchEffect()
+    {
+        chunksColor = GameObject.FindGameObjectsWithTag("Chunks");
+        if (negativeGravity == true)
+        {
+            for (int i = 0; i < chunksColor.Length; i++)
+            {
+                SpriteRenderer a;
+                if (chunksColor[i].GetComponent<SpriteRenderer>() != null)
+                {
+                    a = chunksColor[i].GetComponent<SpriteRenderer>();
+                    a.color = Color32.Lerp(Color.white, switchColor,1);
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < chunksColor.Length; i++)
+            {
+                SpriteRenderer a;
+                if (chunksColor[i].GetComponent<SpriteRenderer>() != null)
+                {
+                    a = chunksColor[i].GetComponent<SpriteRenderer>();
+                    a.color = Color.white;
+                }
+            }
+        }
+        
+    }
+
+    //private IEnumerator FadeColor(SpriteRenderer sprites)
+    //{
+    //    float t = 0.015f;
+    //    while (t < 1)
+    //    {
+    //        yield return sprites.color;
+    //    }
+    //}
+
     void Controls()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (checkGrounded())
             {
-                if (nagativeGravity == false)
+                if (negativeGravity == false)
                 {
-                    nagativeGravity = true;
+                    negativeGravity = true;
                     flip.flipY = true;
                     player.AddForce(-player.transform.up * 0);
                     player.gravityScale = -gravityPower;
                 }
                 else
                 {
-                    nagativeGravity = false;
+                    negativeGravity = false;
                     flip.flipY = false;
                     player.AddForce(player.transform.up * 0);
                     player.gravityScale = gravityPower;
