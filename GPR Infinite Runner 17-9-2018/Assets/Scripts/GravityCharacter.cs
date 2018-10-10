@@ -28,7 +28,7 @@ public class GravityCharacter : MonoBehaviour {
         player = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
         cameraPos = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
-        switchColor = new Color32(255,83,54,255);
+        switchColor = new Color32(0,255,255,255);
     }
     private void Update()
     {
@@ -39,11 +39,11 @@ public class GravityCharacter : MonoBehaviour {
     }
     void adjustSpeed()
     {
-        if(transform.position.x < cameraPos.position.x - 3.36f)
+        if(transform.position.x < cameraPos.position.x - 3.36f && Input.GetKeyUp(KeyCode.RightArrow))
         {
             movementSpeed = catchupSpeed;
         }
-        else if(transform.position.x >= cameraPos.position.x - 3.36f)
+        else
         {
             movementSpeed = 8;
         }
@@ -90,15 +90,6 @@ public class GravityCharacter : MonoBehaviour {
         }
         
     }
-
-    //private IEnumerator FadeColor(SpriteRenderer sprites)
-    //{
-    //    float t = 0.015f;
-    //    while (t < 1)
-    //    {
-    //        yield return sprites.color;
-    //    }
-    //}
 
     void Controls()
     {
