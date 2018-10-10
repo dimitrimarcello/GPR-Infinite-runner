@@ -169,6 +169,11 @@ Prefab:
       propertyPath: checkHeight
       value: 1.41
       objectReference: {fileID: 0}
+    - target: {fileID: 114048583395809032, guid: 7fefaaf26ea6a1e42842ed71ad3cba63,
+        type: 2}
+      propertyPath: catchupSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7fefaaf26ea6a1e42842ed71ad3cba63, type: 2}
   m_IsPrefabParent: 0
@@ -402,6 +407,21 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212913118409967230, guid: 1ac179fafb1a8c449af04d7051a33d8a,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212069102253296834, guid: 1ac179fafb1a8c449af04d7051a33d8a,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212069102253296834, guid: 1ac179fafb1a8c449af04d7051a33d8a,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212069102253296834, guid: 1ac179fafb1a8c449af04d7051a33d8a,
         type: 2}
       propertyPath: m_Color.b
       value: 1
