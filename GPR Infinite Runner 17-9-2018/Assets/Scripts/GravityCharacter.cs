@@ -39,7 +39,7 @@ public class GravityCharacter : MonoBehaviour {
     }
     void adjustSpeed()
     {
-        if(transform.position.x < cameraPos.position.x - 3.36f && Input.GetKeyUp(KeyCode.RightArrow))
+        if(transform.position.x < cameraPos.position.x - 3.36f && Input.GetKeyUp(KeyCode.RightArrow) && checkGrounded())
         {
             movementSpeed = catchupSpeed;
         }
