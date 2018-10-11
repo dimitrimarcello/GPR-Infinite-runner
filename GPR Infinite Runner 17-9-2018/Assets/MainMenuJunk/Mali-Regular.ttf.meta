@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: caa34959defdc9d428d4d8faaa404741
+timeCreated: 1539006166
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mali
+  fontNames:
+  - Mali
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

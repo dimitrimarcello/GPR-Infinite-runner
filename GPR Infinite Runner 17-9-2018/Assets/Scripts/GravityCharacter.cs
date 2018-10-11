@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GravityCharacter : MonoBehaviour {
 
@@ -21,6 +22,10 @@ public class GravityCharacter : MonoBehaviour {
     Transform cameraPos;
     GameObject[] chunksColor;
     Color32 switchColor;
+    [SerializeField]
+    Animator buttonAnime;
+    [SerializeField]
+    Image buttonImage;
 
 
     private void Awake()
@@ -39,7 +44,16 @@ public class GravityCharacter : MonoBehaviour {
     }
     void adjustSpeed()
     {
-        if(transform.position.x < cameraPos.position.x - 3.36f && Input.GetKeyUp(KeyCode.RightArrow) && checkGrounded())
+        if(transform.position.x < cameraPos.position.x - 7f)
+        {
+            buttonImage.enabled = true;
+            buttonAnime.Play("usebutton");
+        }
+        else
+        {
+            buttonImage.enabled = false;
+        }
+        if (transform.position.x < cameraPos.position.x - 3.36f && Input.GetKeyUp(KeyCode.RightArrow) && checkGrounded())
         {
             movementSpeed = catchupSpeed;
         }
@@ -47,6 +61,7 @@ public class GravityCharacter : MonoBehaviour {
         {
             movementSpeed = 8;
         }
+        
     }
     bool checkGrounded()
     {
@@ -90,6 +105,15 @@ public class GravityCharacter : MonoBehaviour {
         }
         
     }
+
+    //private IEnumerator FadeColor(SpriteRenderer sprites)
+    //{
+    //    float t = 0.015f;
+    //    while (t < 1)
+    //    {
+    //        yield return sprites.color;
+    //    }
+    //}
 
     void Controls()
     {
