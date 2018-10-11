@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33983367797211446}
   - component: {fileID: 23426831645286528}
   - component: {fileID: 114271715919546540}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 23649263093499658}
   - component: {fileID: 114542414964022732}
   - component: {fileID: 54130468896833164}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 33830286404811722}
   - component: {fileID: 23447026894578388}
   - component: {fileID: 114742494409691618}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 33466848423938392}
   - component: {fileID: 23965179495795856}
   - component: {fileID: 114294130350994300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33930961484628902}
   - component: {fileID: 23401762551495974}
   - component: {fileID: 114785580297114870}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4041692943185398}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Backgrounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 33536735989856600}
   - component: {fileID: 23981418136242030}
   - component: {fileID: 114164118110488858}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 33853530643217170}
   - component: {fileID: 23301313274304608}
   - component: {fileID: 114045964881516420}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 33177261808397014}
   - component: {fileID: 23406157328360770}
   - component: {fileID: 114725171847211172}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 33498960204530376}
   - component: {fileID: 23336169346818622}
   - component: {fileID: 114940764794315140}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 33487052630783500}
   - component: {fileID: 23940349531820542}
   - component: {fileID: 114288850976496662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 23842823852983328}
   - component: {fileID: 114659417726227770}
   - component: {fileID: 54401236415862316}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 33112253632263076}
   - component: {fileID: 23042050839611976}
   - component: {fileID: 114917723878240208}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 33275129803129974}
   - component: {fileID: 23064993830896306}
   - component: {fileID: 114925431622565568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 33660724444998850}
   - component: {fileID: 23235126449555358}
   - component: {fileID: 114387273208007336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 33340776725424946}
   - component: {fileID: 23190171146508554}
   - component: {fileID: 114694238509201724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BG_Layer1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,6 +9,8 @@ public class Destroyer : MonoBehaviour
     [SerializeField]
     private GameObject Player;
     private Transform cameraPos;
+    [SerializeField]
+    private MainMenu menu;
 
     private void Update()
     {
@@ -17,6 +19,7 @@ public class Destroyer : MonoBehaviour
 
     private void Awake()
     {
+        menu = GameObject.FindGameObjectWithTag("Manager").GetComponent<MainMenu>();
         soundSource = GetComponent<AudioSource>();
         cameraPos = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
     }
@@ -25,8 +28,8 @@ public class Destroyer : MonoBehaviour
     {
         if (Player.transform.position.x <= (cameraPos.position.x - 12.22f))
         {
-            Destroy(Player);
             soundSource.Play();
+            menu.RetryGame("GameOverScreen");
         }
     }
 }

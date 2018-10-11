@@ -9,6 +9,10 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
+    public void RetryGame(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+    }
     
     public void QuitGame()
     {
