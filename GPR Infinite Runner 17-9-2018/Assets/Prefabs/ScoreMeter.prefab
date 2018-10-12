@@ -88,3 +88,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {fileID: 4304879210003624}
   score: {fileID: 0}
+  highScoreText: {fileID: 0}

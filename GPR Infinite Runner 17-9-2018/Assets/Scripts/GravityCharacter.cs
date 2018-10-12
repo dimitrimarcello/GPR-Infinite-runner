@@ -44,6 +44,7 @@ public class GravityCharacter : MonoBehaviour {
     }
     void adjustSpeed()
     {
+        //this allows the character to maintain near the camera.
         if(transform.position.x < cameraPos.position.x - 7f)
         {
             buttonImage.enabled = true;
@@ -65,6 +66,8 @@ public class GravityCharacter : MonoBehaviour {
     }
     bool checkGrounded()
     {
+        //this should make sense it checks if the player is grounded with the use of a raycast. it checks up if player gravity is negative 
+        //and down if player has positive gravity
         if(negativeGravity == false)
         {
             hit = Physics2D.Raycast(transform.position, -Vector2.up, checkHeight, mask);
@@ -78,6 +81,7 @@ public class GravityCharacter : MonoBehaviour {
     }
     void SwitchEffect()
     {
+        //this switches color for all front objects with the use of a for loop
         chunksColor = GameObject.FindGameObjectsWithTag("Chunks");
         if (negativeGravity == true)
         {
@@ -106,17 +110,9 @@ public class GravityCharacter : MonoBehaviour {
         
     }
 
-    //private IEnumerator FadeColor(SpriteRenderer sprites)
-    //{
-    //    float t = 0.015f;
-    //    while (t < 1)
-    //    {
-    //        yield return sprites.color;
-    //    }
-    //}
-
     void Controls()
     {
+        //this is easy it switches the gravity negative and positive with the spacebar it also flips the sprite.
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (checkGrounded())
@@ -125,6 +121,7 @@ public class GravityCharacter : MonoBehaviour {
                 {
                     negativeGravity = true;
                     flip.flipY = true;
+                    //we had to add a force = 0; so that the switch would be instant.
                     player.AddForce(-player.transform.up * 0);
                     player.gravityScale = -gravityPower;
                 }
