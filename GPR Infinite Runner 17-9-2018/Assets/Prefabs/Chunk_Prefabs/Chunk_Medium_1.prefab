@@ -20,10 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4655394831536536}
   - component: {fileID: 212357957952912466}
-<<<<<<< HEAD
-=======
   - component: {fileID: 60088661417060002}
->>>>>>> f56d454735d431f8e104f76297c09f3697bd1691
   m_Layer: 10
   m_Name: Prefab _
   m_TagString: Chunks
