@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Destroyer : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class Destroyer : MonoBehaviour
         menu = GameObject.FindGameObjectWithTag("Manager").GetComponent<MainMenu>();
         soundSource = GetComponent<AudioSource>();
         cameraPos = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
+        Time.timeScale = 1;
     }
 
     private void CheckLocation()
@@ -29,7 +31,13 @@ public class Destroyer : MonoBehaviour
         if (Player.transform.position.x <= (cameraPos.position.x - 12.22f))
         {
             soundSource.Play();
-            menu.RetryGame("GameOverScreen");
+            Invoke("GoToGameoverScreen", 0.5f);
         }
+    }
+
+    private void GoToGameoverScreen()
+    {
+        menu.RetryGame("GameOverScreen");
+        Time.timeScale = 0;
     }
 }

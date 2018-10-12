@@ -8,6 +8,7 @@ TagManager:
   - ChunksMedium
   - ChunksHard
   - Chunks
+  - Manager
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Ground
   - Player
   - BackGround
-  - Manager
+  - 
   - 
   - 
   - 
