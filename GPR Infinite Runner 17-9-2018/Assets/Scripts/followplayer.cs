@@ -8,6 +8,7 @@ public class followplayer : MonoBehaviour {
     [SerializeField]
     float cameraSpeed;
 
+    //this code just makes the camera move with a constant speed
     void Start()
     {
         camera = GetComponent<Rigidbody2D>();

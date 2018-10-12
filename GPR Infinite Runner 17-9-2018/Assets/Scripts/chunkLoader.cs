@@ -25,6 +25,7 @@ public class chunkLoader : MonoBehaviour {
     }
     void LoadChunk()
     {
+        //checks if a new chunk should be created
         if(_camera.position.x >= transform.position.x && donnur == false)
         {
             Vector3 spawnLocation = new Vector3(transform.position.x + 26, transform.position.y, 0);
@@ -46,6 +47,7 @@ public class chunkLoader : MonoBehaviour {
     }
     void DestroyThis()
     {
+        //if object is behind camera it dies.
         if(transform.position.x <= _camera.position.x - 40)
         {
             Destroy(this.gameObject);

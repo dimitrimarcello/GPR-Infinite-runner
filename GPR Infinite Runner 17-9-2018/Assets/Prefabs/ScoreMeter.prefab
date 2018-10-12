@@ -85,4 +85,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   start: {fileID: 4304879210003624}
-  score: {fileID: 114429752125450742, guid: 559562dcfd9cd2449a0d179738b5ac3d, type: 2}
+  score: {fileID: 0}
+  highScoreText: {fileID: 0}
