@@ -87,5 +87,8 @@ MonoBehaviour:
   start: {fileID: 4304879210003624}
   score: {fileID: 0}
   highScoreText: {fileID: 0}
+<<<<<<< HEAD
   score: {fileID: 114429752125450742, guid: 559562dcfd9cd2449a0d179738b5ac3d, type: 2}
 
+=======
+>>>>>>> f56d454735d431f8e104f76297c09f3697bd1691
