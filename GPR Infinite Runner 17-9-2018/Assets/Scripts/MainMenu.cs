@@ -9,6 +9,13 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
+    public void RetryGame(string sceneName)
+    {
+
+        SceneManager.UnloadSceneAsync("Main");
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("GameOverScreen");
+    }
     
     public void QuitGame()
     {

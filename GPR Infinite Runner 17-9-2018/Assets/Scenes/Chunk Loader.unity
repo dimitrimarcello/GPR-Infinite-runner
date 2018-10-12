@@ -189,11 +189,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4259942937037718, guid: 7fefaaf26ea6a1e42842ed71ad3cba63, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.9
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4259942937037718, guid: 7fefaaf26ea6a1e42842ed71ad3cba63, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4259942937037718, guid: 7fefaaf26ea6a1e42842ed71ad3cba63, type: 2}
       propertyPath: m_LocalPosition.z
@@ -292,7 +292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1258259926
 GameObject:
@@ -552,6 +552,88 @@ RectTransform:
   m_AnchoredPosition: {x: -162, y: 50}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1576794601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1049453026097426, guid: 41abf607878641a41a13101b19c9595d,
+    type: 2}
+  m_PrefabInternal: {fileID: 388278310}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1576794604}
+  - component: {fileID: 1576794603}
+  - component: {fileID: 1576794602}
+  m_Layer: 0
+  m_Name: Points-start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1576794602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114827857315909280, guid: 41abf607878641a41a13101b19c9595d,
+    type: 2}
+  m_PrefabInternal: {fileID: 388278310}
+  m_GameObject: {fileID: 1576794601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daef619b8516db242990074e4dae1ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: {fileID: 1576794604}
+  score: {fileID: 613426568}
+  highScoreText: {fileID: 1562129744}
+--- !u!23 &1576794603
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23901122635735462, guid: 41abf607878641a41a13101b19c9595d,
+    type: 2}
+  m_PrefabInternal: {fileID: 388278310}
+  m_GameObject: {fileID: 1576794601}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &1576794604
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4304879210003624, guid: 41abf607878641a41a13101b19c9595d,
+    type: 2}
+  m_PrefabInternal: {fileID: 388278310}
+  m_GameObject: {fileID: 1576794601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.93, y: 1.4, z: 4.8046875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1610116474
 Prefab:
   m_ObjectHideFlags: 0
@@ -715,6 +797,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114051000867425780, guid: 3d900ce2b87cf87489f11a8ec8b06eb6,
+        type: 2}
+      propertyPath: chunksMedium.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d900ce2b87cf87489f11a8ec8b06eb6, type: 2}
   m_IsPrefabParent: 0
@@ -763,7 +850,7 @@ Prefab:
     - target: {fileID: 224823151874070806, guid: 559562dcfd9cd2449a0d179738b5ac3d,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224823151874070806, guid: 559562dcfd9cd2449a0d179738b5ac3d,
         type: 2}
